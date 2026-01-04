@@ -1,21 +1,52 @@
-.gradle
+# -----------------------------
+# Gradle
+# -----------------------------
+.gradle/
 **/build/
 !**/src/**/build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Avoid ignore Gradle wrappper properties
-!gradle-wrapper.properties
+# Keep Gradle wrapper (important if you ignore *.jar / *.properties later)
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
 
 # Cache of project
 .gradletasknamecache
 
-# Eclipse Gradle plugin generated files
-# Eclipse Core
+# -----------------------------
+# Minecraft / Fabric (Loom)
+# -----------------------------
+run/
+logs/
+crash-reports/
+*.log
+
+# -----------------------------
+# Java (optional but useful)
+# -----------------------------
+*.class
+hs_err_pid*
+replay_pid*
+*.hprof
+
+# -----------------------------
+# VS Code
+# -----------------------------
+.vscode/
+*.code-workspace
+
+# -----------------------------
+# Eclipse (harmless if present)
+# -----------------------------
 .project
-# JDT-specific (Eclipse Java Development Tools)
 .classpath
+.settings/
+bin/
+
+# -----------------------------
+# OS junk
+# -----------------------------
+.DS_Store
+Thumbs.db
